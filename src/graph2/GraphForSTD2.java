@@ -8,7 +8,7 @@ public class GraphForSTD2 {
     
     public GraphForSTD2(int vertexCount) {
     	this.vertexCount = vertexCount;
-    	this.adjacencyMatrix = new int[vertexCount][vertexCount];
+    	adjacencyMatrix = new int[vertexCount][vertexCount];
     }
 
     public void addEdge(int source, int destination) {
