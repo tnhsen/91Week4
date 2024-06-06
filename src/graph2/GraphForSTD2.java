@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class GraphForSTD2 {
     private static final int MAX_VERTICES = 9;
-    private int[][] adjacencyMatrix;
+    private static int[][] adjacencyMatrix;
     private int vertexCount;
-
+    
+    public GraphForSTD2(int vertexCount) {
+    	this.vertexCount = vertexCount;
+    	this.adjacencyMatrix = new int[vertexCount][vertexCount];
+    }
 
     public void addEdge(int source, int destination) {
-        if (source < vertexCount && destination < vertexCount && source >= 0 && destination >= 0) {
-            adjacencyMatrix[source][destination] = 1;
-        } else {
-            System.out.println("Invalid vertex number.");
-        }
+    	adjacencyMatrix[source][destination] = 1;
     }
 
     public void printAdjacencyMatrix() {
@@ -35,7 +35,7 @@ public class GraphForSTD2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        GraphForSTD2 graph = new GraphForSTD2();
+        
         
         System.out.print("How many vertices? ");
         int vertexCount = scanner.nextInt();
@@ -44,6 +44,7 @@ public class GraphForSTD2 {
         	System.out.print("How many vertices? ");
             vertexCount = scanner.nextInt();
         }
+        GraphForSTD2 graph = new GraphForSTD2(vertexCount);
         
         for (int i = 0; i < vertexCount; i++) {
             System.out.println("Adjacent of vertex " + i + ":");

@@ -39,7 +39,7 @@ class BST_class {
     	inorderTravel(root);
     } 
    
-
+    //Create new
     private void inorderTravel(Node root) {
 		// TODO Auto-generated method stub
     	if(root != null) {
@@ -54,6 +54,7 @@ class BST_class {
 		postorderTravel(root);
     } 
     
+	//Create new
     private void postorderTravel(Node root) {
 		// TODO Auto-generated method stub
 		if(root != null) {
