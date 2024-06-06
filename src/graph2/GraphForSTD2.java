@@ -3,7 +3,6 @@ package graph2;
 import java.util.Scanner;
 
 public class GraphForSTD2 {
-    private static final int MAX_VERTICES = 9;
     private static int[][] adjacencyMatrix;
     private int vertexCount;
     
