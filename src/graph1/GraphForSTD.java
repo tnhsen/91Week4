@@ -43,11 +43,7 @@ class Graphs<T> {
 			//      หากกราฟมี 1 vertex จะต้องแสดงข้อความว่า "The graph has 1 vertex."
 			//      หากกราฟมี 5 vertices (vertexcount>1) จะต้องแสดงข้อความว่า "The graph has 5 vertices."
 			int vertexCount = map.size();
-			if (vertexCount == 1) {
-	            System.out.println("The graph has 1 vertex.");
-	        } else {
-	            System.out.println("The graph has 5 vertices.");
-	        }
+			System.out.println("The graph has " + vertexCount + " vertices.");
 		}
 
 		// This function gives the count of edges
